@@ -1,0 +1,27 @@
+{
+    "private": true,
+    "scripts": {
+        "hot": "yarn clean && mix watch --hot",
+        "clean": "rm -rf public/js public/css public/css-rtl public/data public/vendors public/mix-manifest.json public/fonts public/images",
+        "production": "yarn clean && mix --production",
+        "postinstall": "yarn production"
+    },
+    "devDependencies": {
+        "cross-env": "^5.2.1",
+        "laravel-mix": "^6.0.6",
+        "popper.js": "^1.16.1",
+        "postcss": "^8.1.14",
+        "resolve-url-loader": "^4.0.0",
+        "sass": "1.30.0",
+        "sass-loader": "^11.0.1"
+    },
+    "dependencies": {
+        "axios": "^0.21",
+        "flatpickr": "^4.6.9",
+        "jquery": "^3.6",
+        "laravel-echo": "^1.11.0",
+        "lodash": "^4.17.19",
+        "pusher-js": "^7.0.3",
+        "bootstrap": "~5.1.0"
+    }
+}
